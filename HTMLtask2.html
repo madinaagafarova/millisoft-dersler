@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>HTML_task2</title>
+</head>
+
+<body>
+    <form name="Personal Details" action="mail.php" method="get">
+        <fieldset style="width: fit-content;">
+            <legend>Personal Details</legend>
+            <p>Salutation</p><br>
+            <select>
+                <option selected>--None--</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select><br><br>
+            First Name:<input type="text" name="First Name" required><br><br>
+            Last Name:<input type="text" name="Last Name" required><br><br>
+            Gender:
+            <input type="radio" name="cins" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="cins" id="Female">
+            <label for="Female">Female</label>
+            <br><br>
+            Email:<input type="email" name="Email" required><br><br>
+            Date of birth:<input type="date" required><br><br>
+            Adress:<br><textarea name="Address" rows="10" cols="50"></textarea><br><br>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+
+    <br><br>
+    <hr>
+
+    <br><br>
+    <h1>HTML Form</h1>
+    <form action="mail.php" method="post">
+        <label for="FN">First name:</label>
+        <input type="text" name="First Name" required placeholder="Enter first name" id="FN"> <br><br>
+        <label for="LN">Last name:</label>
+        <input type="text" name="Last Name" required placeholder="Enter last name" id="LN"> <br><br>
+        <label for="Email">Email:</label>
+        <input type="email" name="Email" required placeholder="Enter email address" id="Email"><br><br>
+        <label for="Tel">Phone:</label>
+        <input type="tel" placeholder="Enter phone number" id="Tel"><br><br>
+        <label for="Country">Country:</label>
+        <select id="Country">
+            <option selected>Choose a country</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Canada</option>
+        </select> <br><br>
+        <label for="City">City:</label>
+        <select id="City">
+            <option selected>Choose a city</option>
+            <option>Douglas</option>
+            <option>London</option>
+            <option>Toronto</option>
+        </select> <br><br>
+        Language(s):
+        <br><br>
+        <label for="en">En</label>
+        <input type="checkbox" name="English" value="yes" id="en">
+        <label for="de">De</label>
+        <input type="checkbox" name="Deutsch" value="yes" id="de">
+        <label for="fr">Fr</label>
+        <input type="checkbox" name="French" value="yes" id="fr">
+        <label for="ru">Ru</label>
+        <input type="checkbox" name="Russian" value="yes" id="ru">
+        <br><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+
+    <br><br><br><br>
+    <hr>
+    <form action="mail.php" method="post">
+        <h1>Login</h1>
+        <label for="name">Name:</label>
+        <input type="text" name="Name" id="name" required> <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="Email" id="email" required> <br><br>
+        <label for="pass">Password:</label>
+        <input type="password" name="Password" id="pass" required> <br><br>
+        <label for="tel">Phone:</label>
+        <input type="tel" name="Phone" id="tel" required> <br><br>
+        Gender:
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label><br><br>
+        Date of birth:
+        <input type="date"> <br><br>
+        <input type="submit" value="send">
+
+    </form>
+    <br><br><br><br>
+    <hr>
+    <form action="mail.php" method="post">
+        <h1>My feedback form</h1>
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" name="Name" id="name" required>
+            </li><br>
+            <li><label for="email">Email:</label>
+                <input type="email" name="Email" id="email" required>
+            </li><br>
+            <li>
+                <label for="pass">Password:</label>
+                <input type="password" name="Password" id="pass" required>
+            </li><br>
+            <li>Please check all the emotions that apply to you:</li>
+            <ul style="list-style-type: disc;">
+                <li>
+                    <label for="angry">Angry:</label>
+                    <input type="checkbox" name="Angry" value="yes" id="angry">
+                </li>
+                <li>
+                    <label for="sad">Sad:</label>
+                    <input type="checkbox" name="Sad" value="yes" id="sad">
+                </li>
+                <li>
+                    <label for="happy">Happy:</label>
+                    <input type="checkbox" name="Happy" value="yes" id="happy">
+                </li>
+                <li>
+                    <label for="ambivalent">Ambivalent:</label>
+                    <input type="checkbox" name="Ambivalent" value="yes" id="ambivalent">
+                </li>
+            </ul>
+            <li>How satisfied were you with our servise?</li>
+            <ul style="list-style-type: disc;">
+
+                <li>
+                    <label for="boo">Very satisfied:</label>
+                    <input type="radio" name="serverate" id="boo">
+                </li>
+                <li>
+                    <label for="satisfied">Satisfied:</label>
+                    <input type="radio" name="serverate" id="satisfied">
+                </li>
+                <li>
+                    <label for="didnot">Didn't care:</label>
+                    <input type="radio" name="serverate" id="didnot">
+                </li>
+                <li>
+                    <label for="diss">Dissatisfied:</label>
+                    <input type="radio" name="serverate" id="diss">
+                </li>
+                <li>
+                    <label for="vrydiss">Very Dissatisfied:</label>
+                    <input type="radio" name="serverate" id="vrydiss">
+                </li>
+            </ul>
+            <br>
+            <li>
+                <label for="comment">Further comments:</label>
+                <textarea id="comment" rows="3" cols="20">
+                </textarea>
+            </li>
+            <br>
+            <li>
+                <label for="myfile">Bio photo:</label>
+                <input type="file" id="myfile" name="myfile">
+            </li>
+            <br>
+            <li>
+                <label for="loc">Location visited:</label>
+                <select id="loc">
+                    <option selected>Select location</option>
+                </select>
+            </li>
+            <br>
+            <li>
+                <input type="submit" value="submit">
+            </li>
+        </ul>
+    </form>
+
+    <br><br><br><br>
+    <hr>
+    <br><br><br><br>
+    <form action="mail.php" method="post">
+        <fieldset style="width: 32%;">
+            <legend>Login</legend>
+            <label for="un">Username*</label><br>
+            <input type="text" name="un" required><br>
+            <label for="pass">Password*</label><br>
+            <input type="text" name="pass" required>
+        </fieldset>
+        <fieldset style="width: 32%;">
+            <legend aria-required="true">Gender*</legend>
+            <label for="m">Male</label>
+            <input type="radio" name="gender" id="m" required>
+            <label for="fm">Female</label>
+            <input type="radio" name="gender" id="fm" required>
+        </fieldset>
+        <fieldset style="width: 32%;">
+            <legend>Programming Skill</legend>
+            <label for="java">Java</label>
+            <input type="checkbox" name="java" id="java">
+            <label for="c++">C++</label>
+            <input type="checkbox" name="c++" id="c++">
+            <label for="c#">C#</label>
+            <input type="checkbox" name="c#" id="c#">
+        </fieldset>
+        <fieldset style="width: 32%;">
+            <legend>Country</legend>
+            <label for="cc">Choose a country</label>
+            <select id="cc">
+                <option selected>Azerbaijan</option>
+                <option>Italy</option>
+                <option>Canada</option>
+            </select>
+        </fieldset>
+        <br>
+        <label for="cm"></label>
+        <textarea id="cm" name="cm" rows="8" cols="59">Enter your comment here
+        </textarea><br>
+        <input type="submit" value="send">
+        <input type="reset" value="reset">
+        <br><br><br><br>
+        <hr>
+        <br><br><br><br>
+        <form action="mail.php" method="post">
+            <fieldset style="width: 70%;">
+                <legend>Personal Information</legend>
+                <label for="ad">Name:</label>
+                <input type="text" name="ad" id="ad"><br><br>
+                <label for="mail">Email:</label>
+                <input type="email" name="email" id="mail"><br><br>
+                <label for="pw">Password:</label>
+                <input type="password" name="password" id="pw"><br><br>
+                <label for="phn">Phone:</label>
+                <input type="tel" name="phone" id="phn"><br><br>
+                Gender:
+                <label for="ml">Male</label>
+                <input type="radio" name="gender" id="ml" required>
+                <label for="fml">Female</label>
+                <input type="radio" name="gender" id="fml" required>
+                <br><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+                <br><br>
+                <label for="wfrm">Country:</label>
+                <select id="wfrm">
+                    <option selected>Choose the country</option>
+                </select>
+            </fieldset>
+            <fieldset style="width: 70%;">
+                <legend>Address</legend>
+                <label for="st">Street:</label>
+                <input type="text" name="street" id="st"><br><br>
+                <label for="cty">City:</label>
+                <input type="text" name="city" id="cty"><br><br>
+                <label for="stt">State:</label>
+                <input type="text" name="state" id="stt"><br><br>
+                <label for="zip">Zip Code:</label>
+                <input type="text" name="zipcode" id="zip">
+            </fieldset>
+            <fieldset style="width: 70%;">
+                <legend>Other Information</legend>
+                <label for="cmt">Comments:</label>
+                <textarea name="cmt" id="cmt" cols="25" rows="3"></textarea><br><br>
+                <label for="agmt">I agree to the terms of service</label>
+                <input type="checkbox" name="agreement" id="agmt" required>
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <br><br><br><br>
+        <hr>
+        <br><br><br><br>
+        <form>
+            <select name="car">
+                <option value="" hidden>Choose the car</option>
+                <option value="1">Nissan</option>
+                <option value="2">Ford</option>
+                <option value="3" disabled>Lexus</option>
+                <option value="4">Audi</option>
+                <option value="5">Honda</option>
+                <option value="6">BMW</option>
+            </select>
+            <br><br><br><br>
+            <form>
+                <select name="product">
+                    <option hidden>Choose the product</option>
+                    <optgroup label="Fruit">
+                        <option value="a">Apple</option>
+                        <option value="o">Orange</option>
+                        <option value="p">Pear</option>
+                        <option value="g">Grape</option>
+                    </optgroup>
+                    <optgroup label="Vegetables">
+                        <option value="ptt">Potato</option>
+                        <option value="tmt">Tomato</option>
+                        <option value="crt">Carrot</option>
+                        <option value="onn">Onion</option>
+                    </optgroup>
+                </select>
+            </form>
+        </form>
+        <br><br><br><br>
+        <table border="1" witdh="70%">
+            <thead>
+                <tr>
+                    <th rowspan="2">Heading</th>
+                    <th>Students</th>
+                    <th colspan="3">Details</th>
+                </tr>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Roll number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">Student list</td>
+                    <td>1</td>
+                    <td>Victor</td>
+                    <td>Computer science</td>
+                    <td>1234</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Kate</td>
+                    <td>Law</td>
+                    <td>2345</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Harry</td>
+                    <td>Electronics</td>
+                    <td>3456</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Clara</td>
+                    <td>Architecture</td>
+                    <td>2345</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><br><br><br>
+
+        <table border="1" style="width: 35%;">
+            <thead>
+                <tr>
+                    <th rowspan="3">A</th>
+                    <th rowspan="2" colspan="3">B</th>
+                    <th rowspan="3">C</th>
+                    <th colspan="5">D</th>
+                </tr>
+                <tr>
+                    <th colspan="2">O</th>
+                    <th colspan="2">P</th>
+                    <th rowspan="2">N</th>
+                </tr>
+                <tr>
+                    <th>E</th>
+                    <th>F</th>
+                    <th>G</th>
+                    <th>H</th>
+                    <th>K</th>
+                    <th>L</th>
+                    <th>M</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br><br><br>
+        <table border="1" witdh="70%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th colspan="2">Jobs</th>
+                    <th>Working Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Software Engineer</td>
+                    <td>Data Analyst</td>
+                    <td rowspan="2">5 Years</td>
+                </tr>
+                <tr>
+                    <td>Ale</td>
+                    <td colspan="2">Senior Web developer</td>
+                </tr>
+                <tr>
+                    <td>Jack</td>
+                    <td>Junior Tech Writer</td>
+                    <td>Blogger</td>
+                    <td>9 Months</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br><br><br>
+        <h1>Computer system</h1>
+        <ol type="1">
+            <li><b>Hardware</b>
+                <ol type="i">
+                    <li>CPU</li>
+                    <li>RAM</li>
+                    <li>I/O Devices</li>
+                </ol>
+            </li>
+            <li><b>Software</b>
+                <ol type="A">
+                    <li><em><b>System Software</b></em>
+                        <ol type="a">
+                            <li>Operating System</li>
+                            <li>Device Drivers</li>
+                        </ol>
+                    </li>
+                    <li><em><b>Application Software</b></em>
+                        <ol type="a">
+                            <li>Word Processor</li>
+                            <li>SpreadSheets</li>
+                            <li>Graphic Software etc</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+
+        </ol>
+
+</body>
+
+</html>
