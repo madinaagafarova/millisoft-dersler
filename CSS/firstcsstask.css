@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main1 {
+    padding: 200px 0px 200px 0px;
+}
+
+.div1 {
+    width: 100%;
+    height: 100px;
+
+}
+
+.text1 {
+    text-align: left;
+    width: 100%;
+    background-color: rgb(130, 222, 235);
+    border: 1px solid rgb(62, 165, 190);
+}
+
+.div2 {
+    width: 100%;
+    height: 100px;
+
+}
+
+.text2 {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(130, 222, 235);
+    border: 1px solid rgb(62, 165, 190);
+}
+
+.div3 {
+    width: 100%;
+    height: 100px;
+}
+
+.text3 {
+    text-align: right;
+    width: 100%;
+    background-color: rgb(130, 222, 235);
+    border: 1px solid rgb(62, 165, 190);
+}
+
+.div4 {
+    width: 100%;
+    height: 100px;
+
+}
+
+.text4 {
+    text-align: justify;
+    width: 100%;
+    background-color: rgb(130, 222, 235);
+    border: 1px solid rgb(62, 165, 190);
+}
+
+.div5 {
+    width: 100%;
+    height: 100px;
+
+}
+
+.text5 {
+    text-align: justify;
+    text-align-last: center;
+    width: 100%;
+    background-color: rgb(130, 222, 235);
+    border: 1px solid rgb(62, 165, 190);
+}
+
+.main2 {
+    width: 100%;
+    text-align: center;
+}
+
+.main2 div {
+    margin: auto;
+    height: 50px;
+    padding: 15px 0px;
+    margin-bottom: 10px;
+
+}
+
+.noborder {
+    font-weight: bold;
+    border: none;
+    background-color: rgb(224, 223, 223);
+    background-size: auto;
+    padding-bottom: 50px;
+}
+
+.solid {
+    font-style: italic;
+    border: 2px solid blue;
+    background-color: rgb(224, 223, 223);
+    padding-bottom: 50px;
+}
+
+.dotted {
+    text-decoration: line-through;
+    border: 4px dotted black;
+    background-color: rgb(224, 223, 223);
+    padding-bottom: 50px;
+}
+
+.dashed {
+    text-decoration: overline gray 3px;
+    border: 4px dashed rgba(46, 45, 45, 0.527);
+    background-color: rgb(224, 223, 223);
+    padding-bottom: 50px;
+}
+
+.double {
+    text-decoration: underline black 1px;
+    border: 4px double rgba(46, 45, 45, 0.527);
+    background-color: rgb(224, 223, 223);
+}
+
+.mixcolor {
+    text-transform: uppercase;
+    border: 2px solid;
+    border-top-color: rgb(150, 1, 150);
+    border-right-color: yellow;
+    border-bottom-color: red;
+    border-left-color: blue;
+    background-color: rgb(224, 223, 223);
+}
+
+.mixpattern {
+    border-right: 4px dotted violet;
+    border-bottom: 4px double orange;
+    border-left: 4px dashed red;
+    background-color: rgb(224, 223, 223);
+}
+
+.main3 {
+    margin-top: 100px;
+}
+
+.main3 div {
+    height: 50px;
+    width: 200px;
+}
+
+.solid2 {
+    margin: 30px 0px;
+    border: 2px solid orange;
+    text-align: center;
+    padding: 10px;
+}
+
+.dotted2 {
+    margin: 30px 100px;
+    border: 2px dotted orange;
+    text-align: center;
+    padding: 10px;
+}
+
+.dashed2 {
+    margin: 30px 200px !important;
+    border: 2px dashed orange;
+    text-align: center;
+    padding: 10px;
+}
+
+.doubled2 {
+    margin: 30px 300px !important;
+    border: 4px double orange;
+    text-align: center;
+    padding: 10px;
+}
+
+.main4 {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 100px;
+    width: 200px;
+    font-style: italic;
+    background-color: rgb(199, 199, 199);
+
+}
+
+.main4 p {
+    padding-top: 5px;
+    height: 40px;
+    border-bottom: 2px solid black;
+}
+
+.main5 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.main5 table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(196, 194, 194);
+}
+
+th {
+    height: 30px;
+}
+
+td {
+    height: 25px;
+}
+
+.main6 {
+    width: 70%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+
+}
+
+.main6 div {
+    border: 2px solid rgb(142, 12, 12);
+    height: 140px;
+    width: 140px;
+    background-color: red;
+}
+
+.main6 :nth-child(1) {
+    border-radius: 10%;
+}
+
+.main6 :nth-child(2) {
+    border-radius: 20% 0;
+}
+
+.main6 :nth-child(3) {
+    border-radius: 50% 50% 0 0;
+}
+
+.main6 :nth-child(4) {
+    border-radius: 100% 0 0;
+}
+
+.main6 :nth-child(5) {
+    border-radius: 0 40%;
+}
+
+.main6 :nth-child(6) {
+    border-radius: 0 100%;
+}
+
+.main6 :nth-child(7) {
+    border-radius: 100% 100% 0 100%;
+}
+
+.main6 :nth-child(8) {
+    border-radius: 100%;
+}
+
+.main7 {
+    width: 70%;
+    height: 220px;
+    box-shadow: 1px 1px 10px 2px rgb(187, 185, 185);
+}
+
+.main7 header {
+    padding: 10px;
+    font-size: 32px;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(12, 156, 212);
+    color: white;
+}
+
+.main7 section {
+    width: 100%;
+    height: 120px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.main7 footer {
+    padding: 10px;
+    font-size: 18px;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(12, 156, 212);
+    color: white;
+}
+
+.main8 {
+    width: 30%;
+    box-shadow: 1px 1px 10px 10px lightgray;
+    border-radius: 5px;
+}
+
+.main8 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.main8 .subhead p{
+    padding: 10px 20px;
+}
+.main8 .subhead :first-child{
+    font-size: 20px;
+    font-weight: 700;
+}
